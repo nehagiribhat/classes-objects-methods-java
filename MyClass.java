@@ -1,5 +1,5 @@
 class First {
-	public void display() {
+	public void show() {
 		System.out.println("One");
 	}
 }
@@ -8,7 +8,7 @@ class First {
 class Second extends First {
 	
 	@Override
-	public void display() {
+	public void show() {
 		System.out.println("Second");
 	}
 
@@ -57,10 +57,10 @@ class MyClass {
 	public static void main(String[] args) {
 
 		First a=new First();
-		a.display();
+		a.show();
 
 		Second b=new Second();
-		b.display();
+		b.show();
 
 		System.out.println(b.add(4,2));
 		System.out.println(b.add(5.,2.));	 //polymorphism
